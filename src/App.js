@@ -15,7 +15,7 @@ function App() {
 
     <div className="App">
       <header className="App-header">
-        <h1>Sokogarden -Buy & Sell Goods Online</h1>
+        <h1>Sokogarden -Buy & Sell Online</h1>
       </header>
       <nav>
 

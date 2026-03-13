@@ -85,7 +85,7 @@ const SignUp = () => {
         <p className='text-success'>{success}</p>
         <p className='text-danger'>{error}</p>
 
-        {username}
+         {username}
 
         <input type="text" placeholder=' Enter your username' className='form-control' value={username} onChange={(e)=>setUsername(e.target.value)}/>
         <br />
