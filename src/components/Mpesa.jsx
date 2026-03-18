@@ -45,7 +45,7 @@ const Mpesa = () => {
       <div className='col-md-6'>
       <form action="" onSubmit={submit}>
 
-          <input type="tel" placeholder='Enter your phone number starting with 254' className='form-control' value={phone} onChange={(e)=>setPhone(error.target.value)}/>
+          <input type="tel" placeholder='Enter your phone number starting with 254' className='form-control' value={phone} onChange={(e)=>setPhone(e.target.value)}/>
           <br />
           <button className='btn btn-success form-control'>Make Payments</button>
 
