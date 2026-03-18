@@ -1,12 +1,18 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+
 
 const GetProducts = () => {
 
   const[loading,setLoading]=useState("")
   const[error,setError]=useState("")
   const[products,setproducts]=useState([])
+
+
+
+  const navigate=useNavigate()
 
   // variable to store an image
   const image_url="http://collins.alwaysdata.net/static/images/"
@@ -67,7 +73,7 @@ const GetProducts = () => {
           <h4 className='text-success'>{product.product_name}</h4>
           <p className='text-secondary'>{product.product_description}</p>
           <p className='text-warning'>{product.product_cost}</p>
-          <input type="btn" className='btn bg-secondary text-white' value={"Make payment"} />
+          <input type="btn" className='btn bg-secondary text-white' value={"Purchase Now"} onClick={()=>navigate("/mpesa",{state:{product}})}/>
           
           
 
